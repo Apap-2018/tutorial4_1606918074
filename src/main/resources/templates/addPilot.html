@@ -7,7 +7,7 @@
 		<h2>Hello!</h2>
 		
 		<h3>Tambah Pilot</h3>
-		<form action="@{/pilot/add}" th:object="${pilot}" method="POST">
+		<form th:action="@{/pilot/add}" th:object="${pilot}" method="POST">
 			License Number:<br>
 			<input type="text" name="licenseNumber"/>
 			<br>

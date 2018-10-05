@@ -12,7 +12,7 @@ import com.apap.tutorial4.repository.FlightDb;
 public class FlightServiceImpl implements FlightService{
 	@Autowired
 	private FlightDb flightDb;
-	
+	 
 	@Override
 	public void addFlight(FlightModel flight) {
 		flightDb.save(flight);

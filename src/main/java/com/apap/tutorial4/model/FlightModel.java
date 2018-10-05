@@ -37,4 +37,46 @@ public class FlightModel implements Serializable {
 	@JsonIgnore
 	private PilotModel pilot;
 
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getOrigin() {
+		return origin;
+	}
+
+	public void setOrigin(String origin) {
+		this.origin = origin;
+	}
+
+	public String getDestination() {
+		return destination;
+	}
+
+	public void setDestination(String destination) {
+		this.destination = destination;
+	}
+
+	public Date getTime() {
+		return time;
+	}
+
+	public void setTime(Date time) {
+		this.time = time;
+	}
+
+	public PilotModel getPilot() {
+		return pilot;
+	}
+
+	public void setPilot(PilotModel pilot) {
+		this.pilot = pilot;
+	}
+	
+	
+
 }
