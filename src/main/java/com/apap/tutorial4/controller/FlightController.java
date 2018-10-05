@@ -22,7 +22,7 @@ public class FlightController {
 	@RequestMapping(value="/flight/add/{licenseNumber}", method = RequestMethod.GET)
 	private String add(@PathVariable(value="licenseNumber") String licenseNumber, Model model) {
 		FlightModel flight = new FlightModel();
-		PilotModel pilot = PilotService.getPilotDetailByLicenseNumber(licenseNumber);
+		PilotModel pilot = pilotService.getPilotDetailByLicenseNumber(licenseNumber);
 		flight.setPilot(pilot);
 		
 		model.addAttribute("flight", flight);
